@@ -10,7 +10,7 @@ export default function Record({ albumId, title, imageUrl }: RecordProps) {
   const isPlayingCurrentRecord =
     isPlaying.value && currentTrack.value.albumId === albumId;
 
-  const className = `absolute top-0 opacity-0 vynil-imge vynil-animation-in ${
+  const className = `absolute top-0 opacity-0 vynil-image vynil-animation-in${
     isPlayingCurrentRecord && "-spinning"
   }`;
 

@@ -23,11 +23,12 @@ const { id, name, artist, image_url } = Astro.props;
         height="400"
       />
       <img
-        class="absolute top-0 opacity-0 vyn"
-        src="/vynllp.webp"
+        class="absolute top-0 opacity-0 vynil-image opacity-0"
+        src="/vynil-lp.webp"
         alt="vinyl record that spins when playing"
         width="400"
         height="400"
+        transition:name={`vynil-${id}`}
       />
     </div>
     <p class="pt-4 font-semibold">{name}</p>
