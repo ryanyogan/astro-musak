@@ -1,0 +1,19 @@
+---
+import Layout from "src/layouts/Layout.astro";
+
+const { id } = Astro.params;
+const response = await fetch(
+  `https://music-api.charca.workers.dev/albums/${id}`
+);
+const album = await response.json();
+---
+
+<Layout title="Moo Tunes">
+  <section>
+    <div
+      class="container max-w-screen-lg mx-auto px-6 lg:px-0 flex flex-col items-start md:items-end md:flex-row pt-8 pb-12 overflow-hidden"
+    >
+      {id}
+    </div>
+  </section>
+</Layout>
