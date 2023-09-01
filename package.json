@@ -10,9 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^7.0.0",
     "@astrojs/preact": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
+    "@astrojs/vercel": "^4.0.3",
     "@preact/signals": "^1.2.1",
     "astro": "^3.0.6",
     "preact": "^10.17.1",
