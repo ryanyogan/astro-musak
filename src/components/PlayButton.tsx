@@ -25,7 +25,7 @@ export default function PlayButton({
           imageUrl,
         };
 
-        isPlaying.value = true;
+        isPlaying.value = !isPlaying.value;
       }}
     >
       <svg

@@ -1,4 +1,4 @@
-import { currentTrack, isPlaying, type Track } from "src/state";
+import { currentTrack, isPlaying, type Track } from "../state";
 
 type Props = {
   tracks: Track[];
@@ -60,14 +60,14 @@ export default function TrackList({
                 imageUrl,
               };
 
-              isPlaying.value = true;
+              isPlaying.value = !isPlaying.value;
             }}
           >
             <span class="text-gray-500 w-8 mr-2">
               {isCurrentTrack && !isPlaying.value
-                ? pauseIcon
-                : isCurrentTrack && isPlaying.value
                 ? playIcon
+                : isCurrentTrack && isPlaying.value
+                ? pauseIcon
                 : track.position}
             </span>
             <span class="font-medium">{track.title}</span>
