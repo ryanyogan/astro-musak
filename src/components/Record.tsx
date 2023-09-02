@@ -29,7 +29,7 @@ export default function Record({ albumId, title, imageUrl }: RecordProps) {
         width="400"
         height="400"
         class={className}
-        style={`view-transition-name: vinyl-${albumId};`}
+        style={`view-transition-name: vynil-${albumId};`}
       />
     </div>
   );
